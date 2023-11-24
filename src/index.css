@@ -20,6 +20,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+#root > a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
   display: block;
