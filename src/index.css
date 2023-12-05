@@ -66,6 +66,7 @@ h1 {
 
 .moviecard-vote {
   font-size: 2rem;
+  margin: 0 auto;
 }
 
 .moviecard h3 {
@@ -111,6 +112,7 @@ h1 {
 .moviecard-description {
   color: black;
   font-size: medium;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -214,4 +216,8 @@ form {
 form input {
   padding: 10px;
   border-radius: 20px;
+}
+
+.moviecard-description span {
+  margin-left: 40%;
 }
