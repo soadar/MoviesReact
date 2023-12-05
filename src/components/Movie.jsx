@@ -7,9 +7,9 @@ function Movie() {
   const [movie, setMovie] = useState([]);
 
   const getMovie = async () => {
-    const url = `https://api.themoviedb.org/3/movie/${id}?language=es-ES`; /////////////revisar
+    const url = `https://api.themoviedb.org/3/movie/${id}?language=es-ES`;
     const config = {
-      method: "GET", // GET POR DEFECTO  METHODS = GET,POST,PUT,DELETE,PATCH,OPTIONS
+      method: "GET",
       headers: {
         "content-type": "application/json",
         authorization: `Bearer ${import.meta.env.VITE_TOKEN}`,
@@ -25,10 +25,10 @@ function Movie() {
   useEffect(() => {
     getMovie();
   }, []);
-  //return <h1>pelicula {id}</h1>;
+
   return (
     <div className="oneMovie">
-      <MovieCard key={`${movie.id}${Math.random()}`} pelicula={movie} />;
+      <MovieCard key={`${movie.id}${Math.random()}`} pelicula={movie} />
     </div>
   );
 }

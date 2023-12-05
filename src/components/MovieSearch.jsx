@@ -4,7 +4,6 @@ import MovieCardSearch from "./MovieCardSearch.jsx";
 
 function MovieSearch({}) {
   const { query } = useParams();
-  console.log("name2", query);
 
   const [movies, setMovies] = useState([]);
 
@@ -27,7 +26,7 @@ function MovieSearch({}) {
   useEffect(() => {
     getMovies();
   }, []);
-  //return <h1>pelicula {id}</h1>;
+
   return (
     <>
       <Link to="/">
