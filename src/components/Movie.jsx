@@ -7,7 +7,7 @@ function Movie() {
   const [movie, setMovie] = useState([]);
 
   const getMovie = async () => {
-    const url = `https://api.themoviedb.org/3/movie/${id}`;
+    const url = `https://api.themoviedb.org/3/movie/${id}?language=es-ES`; /////////////revisar
     const config = {
       method: "GET", // GET POR DEFECTO  METHODS = GET,POST,PUT,DELETE,PATCH,OPTIONS
       headers: {

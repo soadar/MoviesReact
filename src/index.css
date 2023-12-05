@@ -20,10 +20,6 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-#root > a {
-  text-decoration: none;
-}
-
 img {
   width: 100%;
   display: block;
@@ -84,6 +80,11 @@ h1 {
 
 .moviecard:hover .moviecard-image img {
   transform: scale(1.05);
+}
+
+.twoMovie {
+  width: 80rem;
+  margin: 0 auto;
 }
 
 .oneMovie {
@@ -189,7 +190,6 @@ h1 {
   .content {
     display: flex;
     flex-direction: column;
-    margin: 0;
   }
   .moviecard {
     width: 50rem;
@@ -198,10 +198,19 @@ h1 {
   .moviecard * {
     text-decoration: none;
   }
+
   .oneMovie {
-    margin: 0;
+    margin: 0 auto;
   }
-  .moviecard {
-    margin: 0;
-  }
+}
+
+form {
+  font-size: x-large;
+  text-align: center;
+  margin: 5rem;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 20px;
 }

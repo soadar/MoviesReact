@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 function MovieCard({ pelicula }) {
   // children key
   //LA FUNCION de COMPONENTES NO PUEDE SER ASINCRONA
